@@ -33,9 +33,9 @@ st.title("🩺 Toubib AI - Détection des lésions de la peau")
 # --- CHARGEMENT DES MODÈLES ---
 @st.cache_resource
 def load_models():
-    onnx_path = ".venv/toubib_AI_training.onnx"
+    onnx_path = "toubib_AI_training.onnx"
     session = ort.InferenceSession(onnx_path, providers=['CPUExecutionProvider'])
-    model_pt = YOLO(".venv/toubib_AI_training.pt") 
+    model_pt = YOLO("toubib_AI_training.pt") 
     return session, model_pt
 
 try:
