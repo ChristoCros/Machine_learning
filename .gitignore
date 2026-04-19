@@ -1,0 +1,7 @@
+.venv/
+pyvenv.cfg
+*.csv
+__pycache__/
+*.pyc
+.lock
+CACHEDIR.TAG
